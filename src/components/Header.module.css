@@ -1,0 +1,64 @@
+@import '../styles/media.css';
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5em 1em;
+  margin-bottom: 2em;
+  position: sticky;
+  z-index: 1000;
+  top: -0.5em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  background-color: var(--darkest);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+@property --button-border-angle {
+  syntax: '<angle>';
+  initial-value: 180deg;
+  inherits: false;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 4px solid transparent;
+  border-image: conic-gradient(
+    from var(--button-border-angle),
+    transparent 0deg 90deg,
+    var(--light-cyan) 90deg 115deg,
+    var(--cyan) 245deg 270deg,
+    transparent 270deg
+  ) 0 0 1 0;
+  transition: --button-border-angle 0.25s ease;
+}
+
+nav a:hover, .active {
+  --button-border-angle: 0deg;
+}
+
+
+@media (--tablet) {
+  nav {
+    padding: 1em;
+  }
+}

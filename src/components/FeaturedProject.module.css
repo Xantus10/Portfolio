@@ -1,0 +1,51 @@
+@import '../styles/media.css';
+
+.card {
+  width: 280px;
+  height: max-content;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark);
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.1) 12px 12px 12px;
+}
+
+.github {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 2.5rem;
+}
+
+.image {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  padding: 1em;
+}
+
+.addtext {
+  color: lightgray;
+  font-size: 0.8em;
+}
+
+@media (--mobile) {
+  .card {
+    width: 320px;
+    min-height: 450px;
+  }
+}

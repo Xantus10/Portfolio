@@ -1,0 +1,89 @@
+{
+  "Here": "zde",
+  "Header": {
+    "Home": "Domů",
+    "Projects": "Projekty"
+  },
+  "FeaturedProject": {
+    "AdditionalNotes": "Další poznámky"
+  },
+  "Pages": {
+    "Home": {
+      "Subtitle": "Studuji kyberbezpečnost a ve svém volném čase tvořím různé projekty.",
+      "Welcome": "Vítejte na mém portfoliu",
+      "ExpirienceTitle": "Zkušenosti",
+      "Expiriences": {
+        "VDA_CS_Teacher": {
+          "Title": "Učitel kyberbezpečnosti",
+          "Desc": "Výuka kyberbezpečnosti na SŠTD Gustava Habrmana na základě DPP, pod dohledem asistujícího pedagoga."
+        }
+      },
+      "EducationTitle": "Vzdělání",
+      "Educations": {
+        "VDA": {
+          "Title": "Střední škola technická a dopravní Gustava Habrmana Česká Třebová",
+          "Desc": "Zakončeno Maturitou, obor: Informační technologie"
+        },
+        "MUNIBc": {
+          "Title": "Masarykova Univerzita",
+          "Desc": "Bakalařský program: Kyberbezpečnost"
+        }
+      },
+      "CompetitionsTitle": "Soutěže",
+      "Competitions": {
+        "Kybersoutez": {
+          "Title": "Národní soutěž ČR v kybernetické bezpečnosti",
+          "Desc": "Několikanásobný finalista"
+        },
+        "NAG": {
+          "Title": "Networking Academy Games (kategorie HS3)",
+          "Desc": "Druhé místo"
+        },
+        "CVUT_TD": {
+          "Title": "ČVUT Troubleshoot Day",
+          "Desc": "Dvojnásobné první místo"
+        }
+      },
+      "FeaturedProjectsTitle": "Vybrané projekty",
+      "MoreProjects": "Další projekty",
+      "FeaturedProjects": {
+        "Maturita": {
+          "Name": "Burza učebnic",
+          "Desc1": "Fullstack webová aplikace pro studenty kteří chtějí prodat své učebnice.",
+          "Desc2": "Studenti se přihlašují pomocí svého Office 365 účtu a vytváří příspěvky o prodeji svých učebnic. Můžou rovněž filtrovat, procházet a reagovat na příspěvky.",
+          "Desc3": "Stránka běží na školních serverech a je přístupná pouze studentům, nicméně je možnost nahlédnout do uživatelské dokumentace",
+          "AddNotes": "Nejrozsáhlejší projekt který jsem kdy udělal."
+        },
+        "PQClib": {
+          "Name": "Python PQC lib",
+          "Desc1": "Python implementace Post-Kvantových algorithmů které jsou standardizovány v",
+          "Desc2": "Kód je plně funkční a je otestována jeho správnost s pomocí NIST ACVP test dat.",
+          "Desc3": "Knihovna je veřejně dostupná na",
+          "AddNotes": "Implementace od naprostých základů (žádné knihovny kromě numpy)."
+        },
+        "SOC": {
+          "Name": "SOC Alert Sim",
+          "Desc1": "Jednoduchá frontendová aplikace pro simulaci alert triage.",
+          "Desc2": "Aplikace zjednodušeně řečeno tvoří UI kolem JSON souboru a přidává možnost kontroly. Zahrnuje rovněž stránku pro tvorbu nových cvičení.",
+          "Desc3": "V aplikaci je pár cvičení na vyzkoušení, stránka je dostupná"
+        }
+      },
+      "SkillsTitle": "Dovednosti",
+      "Skills": {
+        "0": "Kyberbezpečnost",
+        "1": "Počítačové sítě (úroveň CCNA)",
+        "2": "Python",
+        "3": "React",
+        "4": "C++"
+      },
+      "SkillsHint": {
+        "Green": "Zelená",
+        "GreenMeaning": "Plná důvěra v mé schopnosti",
+        "Yellow": "Žlutá",
+        "YellowMeaning": "Studoval jsem a užil v praxi"
+      },
+      "CertificationTitle": "Certifikace",
+      "OtherCourses": "Další kurzy"
+    }
+  }
+}

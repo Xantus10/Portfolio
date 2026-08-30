@@ -1,0 +1,89 @@
+{
+  "Here": "here",
+  "Header": {
+    "Home": "Home",
+    "Projects": "Projects"
+  },
+  "FeaturedProject": {
+    "AdditionalNotes": "Additional notes"
+  },
+  "Pages": {
+    "Home": {
+      "Subtitle": "I study cybersecurity and create various fun projects in my free time.",
+      "Welcome": "Welcome to my portfolio",
+      "ExpirienceTitle": "Expirience",
+      "Expiriences": {
+        "VDA_CS_Teacher": {
+          "Title": "Cybersecurity teacher",
+          "Desc": "Cybersecurity teaching based on an Agreement for Work, under the supervision of an assistant teacher."
+        }
+      },
+      "EducationTitle": "Education",
+      "Educations": {
+        "VDA": {
+          "Title": "Střední škola technická a dopravní Gustava Habrmana Česká Třebová",
+          "Desc": "Maturita, specialization: Information technology"
+        },
+        "MUNIBc": {
+          "Title": "Masaryk University",
+          "Desc": "Bachelor programme: Cybersecurity"
+        }
+      },
+      "CompetitionsTitle": "Competitions",
+      "Competitions": {
+        "Kybersoutez": {
+          "Title": "Czech Republic National Cybersecurity Competition",
+          "Desc": "Multiple-time finalist"
+        },
+        "NAG": {
+          "Title": "Networking Academy Games (category HS3)",
+          "Desc": "2nd place"
+        },
+        "CVUT_TD": {
+          "Title": "ČVUT Troubleshoot Day",
+          "Desc": "Two 1st place finishes"
+        }
+      },
+      "FeaturedProjectsTitle": "Featured Projects",
+      "MoreProjects": "Other projects",
+      "FeaturedProjects": {
+        "Maturita": {
+          "Name": "Textbook Exchange",
+          "Desc1": "A fullstack web application for students to advertise their used books for sale.",
+          "Desc2": "Students log in with their Office 365 account and create posts about selling their books. They can also filter and browse these posts and react to them.",
+          "Desc3": "Site is running on school servers and is accessible only to school students, but you can access the user documentation",
+          "AddNotes": "To this day the largest project I have ever done."
+        },
+        "PQClib": {
+          "Name": "Python PQC lib",
+          "Desc1": "Python implementation of Post-Quantum cryptography algorithms from the",
+          "Desc2": "The code is fully functional and tested to be NIST compatible with NIST ACVP test data.",
+          "Desc3": "The library is available on",
+          "AddNotes": "Implementation from scratch (no dependencies other than numpy)."
+        },
+        "SOC": {
+          "Name": "SOC Alert Sim",
+          "Desc1": "A simple frontend only application for simulating simple alert triage.",
+          "Desc2": "The application essentially creates a UI around a JSON file and adds checking capabilities. It also features a creator for custom exercises.",
+          "Desc3": "There are a few preset exercises, the site is available"
+        }
+      },
+      "SkillsTitle": "Skills",
+      "Skills": {
+        "0": "Cybersecurity",
+        "1": "Networking (CCNA level)",
+        "2": "Python",
+        "3": "React",
+        "4": "C++"
+      },
+      "SkillsHint": {
+        "Green": "Green",
+        "GreenMeaning": "Full confidence in my abilities",
+        "Yellow": "Yellow",
+        "YellowMeaning": "Learned and used in practice"
+      },
+      "CertificationTitle": "Certifications",
+      "OtherCourses": "Other courses"
+    }
+  }
+}

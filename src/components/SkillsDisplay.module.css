@@ -1,0 +1,20 @@
+.twocolumns {
+  margin-top: 1em;
+  column-count: 2;
+}
+
+.twocolumns p {
+  margin-top: 0;
+  width: fit-content;
+  padding: 0.5em;
+}
+
+.fullconfident {
+  border: green solid 2px;
+  border-radius: 0.5em;
+}
+
+.partconfident {
+  border: yellow solid 2px;
+  border-radius: 0.5em;
+}

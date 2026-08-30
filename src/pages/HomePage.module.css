@@ -1,0 +1,156 @@
+@import '../styles/media.css';
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  height: 100%;
+  margin: 1em;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: lightgray;
+}
+
+h3 {
+  font-size: 1.25rem;
+  padding: 0.5em;
+  box-shadow: var(--cyan) -3px 3px;
+  width: fit-content;
+}
+
+#welcome {
+  font-weight: bold;
+  padding: 0.5em;
+  font-size: 1.25rem;
+  margin: 1em 0 1em 0.5em;
+  box-shadow: var(--light-dark) -5px 5px;
+  width: fit-content;
+}
+
+.mypastcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.mypastcontainer div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.projectscontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+  gap: 1em;
+  row-gap: 2em;
+}
+
+#otherprojects {
+  font-weight: bold;
+  margin-left: 1em;
+  padding: 1em 0.5em;
+  box-shadow: var(--light-dark) -4px 4px,
+              var(--cyan) -8px 6px,
+              var(--light-cyan) -11px 8px;
+}
+
+#otherprojects span {
+  margin-left: 0.25em;
+  transition: margin 0.25s ease;
+}
+
+#otherprojects:hover span {
+  margin-left: 0.75em;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.flexrow > div {
+  flex: 1;
+}
+
+#skillshint {
+  margin-left: 1em;
+  display: inline;
+  anchor-name: --skills-hint-anchor;
+}
+
+#skillshinttooltip {
+  display: none;
+  font-size: initial;
+  font-weight: initial;
+  position: absolute;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background-color: var(--light-dark);
+  position-anchor: --skills-hint-anchor;
+  position-area: top;
+  translate: 0 -1em;
+}
+
+#skillshinttooltip p {
+  margin: 0;
+}
+
+#skillshint:hover #skillshinttooltip {
+  display: inline;
+}
+
+@media (--mobile) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #welcome {
+    font-size: 1.5rem;
+    margin: 1.5em 0 1.5em 3.5em;
+  }
+
+  main {
+    padding: 1em;
+  }
+
+  #skillshinttooltip {
+    position-area: right;
+    translate: 1em 0;
+  }
+}
+
+@media (--tablet) {
+  main {
+    padding: 3em;
+  }
+
+  .mypastcontainer {
+    flex-direction: row;
+  }
+
+  .flexrow {
+    flex-direction: row;
+  }
+
+  main section:first-child {
+    margin-top: 10vh;
+  }
+}
