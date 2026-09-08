@@ -64,7 +64,7 @@
         "SOC": {
           "Name": "SOC Alert Sim",
           "Desc1": "A simple frontend only application for simulating simple alert triage.",
-          "Desc2": "The application essentially creates a UI around a JSON file and adds checking capabilities. It also features a creator for custom exercises.",
+          "Desc2": "The application displays alerts and additional information for each of them and students should identify whether the alert is a true positive or a false positive. It also features a creator for custom exercises.",
           "Desc3": "There are a few preset exercises, the site is available"
         }
       },
@@ -74,7 +74,8 @@
         "1": "Networking (CCNA level)",
         "2": "Python",
         "3": "React",
-        "4": "C++"
+        "4": "Linux (Kali)",
+        "5": "C++"
       },
       "SkillsHint": {
         "Green": "Green",
@@ -83,7 +84,27 @@
         "YellowMeaning": "Learned and used in practice"
       },
       "CertificationTitle": "Certifications",
-      "OtherCourses": "Other courses"
+      "OtherCourses": "Other courses",
+      "LangTitle": "Languages",
+      "Languages": {
+        "CZ": {
+          "Name": "Czech",
+          "Level": "Native speaker"
+        },
+        "EN": {
+          "Name": "English",
+          "Level": "C1 (CEFR certified)"
+        }
+      }
+    },
+    "Projects": {
+      "Title": "My projects",
+      "Subtitle": "All my notable projects",
+      "Categories": {
+        "Cyber": "Cybersecurity",
+        "Web": "Web applications",
+        "Misc": "Miscellaneous"
+      }
     }
   }
 }

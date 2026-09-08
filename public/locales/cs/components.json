@@ -57,14 +57,14 @@
         "PQClib": {
           "Name": "Python PQC lib",
           "Desc1": "Python implementace Post-Kvantových algorithmů které jsou standardizovány v",
-          "Desc2": "Kód je plně funkční a je otestována jeho správnost s pomocí NIST ACVP test dat.",
+          "Desc2": "Kód je plně funkční a jeho správnost je otestována s pomocí NIST ACVP test dat.",
           "Desc3": "Knihovna je veřejně dostupná na",
           "AddNotes": "Implementace od naprostých základů (žádné knihovny kromě numpy)."
         },
         "SOC": {
           "Name": "SOC Alert Sim",
           "Desc1": "Jednoduchá frontendová aplikace pro simulaci alert triage.",
-          "Desc2": "Aplikace zjednodušeně řečeno tvoří UI kolem JSON souboru a přidává možnost kontroly. Zahrnuje rovněž stránku pro tvorbu nových cvičení.",
+          "Desc2": "Aplikace zobrazuje alerty a příslušné informace a na základě těchto dat má student určit zda se jedná o true positive nebo false positive. Zahrnuje rovněž stránku pro tvorbu nových cvičení.",
           "Desc3": "V aplikaci je pár cvičení na vyzkoušení, stránka je dostupná"
         }
       },
@@ -74,7 +74,8 @@
         "1": "Počítačové sítě (úroveň CCNA)",
         "2": "Python",
         "3": "React",
-        "4": "C++"
+        "4": "Linux (Kali)",
+        "5": "C++"
       },
       "SkillsHint": {
         "Green": "Zelená",
@@ -83,7 +84,27 @@
         "YellowMeaning": "Studoval jsem a užil v praxi"
       },
       "CertificationTitle": "Certifikace",
-      "OtherCourses": "Další kurzy"
+      "OtherCourses": "Další kurzy",
+      "LangTitle": "Jazyky",
+      "Languages": {
+        "CZ": {
+          "Name": "Čeština",
+          "Level": "Rodilý mluvčí"
+        },
+        "EN": {
+          "Name": "Angličtina",
+          "Level": "C1 (CEFR certifikace)"
+        }
+      }
+    },
+    "Projects": {
+      "Title": "Mé projekty",
+      "Subtitle": "Všechny mé projekty",
+      "Categories": {
+        "Cyber": "Kyberbezpečnost",
+        "Web": "Webové aplikace",
+        "Misc": "Různé"
+      }
     }
   }
 }

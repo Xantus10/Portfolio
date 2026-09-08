@@ -16,7 +16,7 @@ function HomePage() {
   const { t } = useTranslation();
 
   return (
-    <main>
+    <main className={classes.main}>
       <section>
         <h1>Jaroslav Žaba</h1>
         <h2 style={{textWrap: 'balance'}}>{t('Pages.Home.Subtitle')}</h2>
@@ -38,12 +38,12 @@ function HomePage() {
             ]} />
           </div>
           <div>
-            <h3>{t('Pages.Home.CompetitionsTitle')}</h3>
-            <ExperienceCard experiences={[
-              {title: t('Pages.Home.Competitions.Kybersoutez.Title'), desc: t('Pages.Home.Competitions.Kybersoutez.Desc')},
-              {title: t('Pages.Home.Competitions.NAG.Title'), desc: t('Pages.Home.Competitions.NAG.Desc')},
-              {title: t('Pages.Home.Competitions.CVUT_TD.Title'), desc: t('Pages.Home.Competitions.CVUT_TD.Desc')}
-            ]} />
+            <h3>{t('Pages.Home.CertificationTitle')}</h3>
+            <ul>
+              <li><p><code>PCEP-30-01</code> - Certified Entry-Level Python Programmer</p></li>
+              <li><p><code>JSE-40-01</code> - Certified Entry-Level JavaScript Programmer</p></li>
+              <li><a target='_blank' href="https://www.credly.com/users/jaroslav-zaba/badges/credly">{t('Pages.Home.OtherCourses')} (Credly)</a></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -80,16 +80,23 @@ function HomePage() {
               </div>
             </div>
           </h3>
-          <SkillsDisplay translationBasename='Pages.Home.Skills' len={5} confidentNumber={4} />
+          <SkillsDisplay translationBasename='Pages.Home.Skills' len={6} confidentNumber={4} />
         </div>
         <div>
-          <h3>{t('Pages.Home.CertificationTitle')}</h3>
-          <ul>
-            <li><p><code>PCEP-30-01</code> - Certified Entry-Level Python Programmer</p></li>
-            <li><p><code>JSE-40-01</code> - Certified Entry-Level JavaScript Programmer</p></li>
-            <li><a target='_blank' href="https://www.credly.com/users/jaroslav-zaba/badges/credly">{t('Pages.Home.OtherCourses')} (Credly)</a></li>
-          </ul>
+          <h3>{t('Pages.Home.CompetitionsTitle')}</h3>
+          <ExperienceCard experiences={[
+            {title: t('Pages.Home.Competitions.Kybersoutez.Title'), desc: t('Pages.Home.Competitions.Kybersoutez.Desc')},
+            {title: t('Pages.Home.Competitions.NAG.Title'), desc: t('Pages.Home.Competitions.NAG.Desc')},
+            {title: t('Pages.Home.Competitions.CVUT_TD.Title'), desc: t('Pages.Home.Competitions.CVUT_TD.Desc')}
+          ]} />
         </div>
+      </section>
+      <section>
+        <h3>{t('Pages.Home.LangTitle')}</h3>
+        <ul>
+          <li><p><strong>{t("Pages.Home.Languages.CZ.Name")}</strong> - {t("Pages.Home.Languages.CZ.Level")}</p></li>
+          <li><p><strong>{t("Pages.Home.Languages.EN.Name")}</strong> - {t("Pages.Home.Languages.EN.Level")}</p></li>
+        </ul>
       </section>
     </main>
   );

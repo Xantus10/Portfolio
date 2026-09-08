@@ -1,31 +1,49 @@
 @import '../styles/media.css';
 
-main {
+main.main {
   display: flex;
   flex-direction: column;
   gap: 2em;
   height: 100%;
   margin: 1em;
+
+  @media (--mobile) {
+    padding: 1em;
+  }
+
+  @media (--tablet) {
+    padding: 3em;
+  }
 }
 
-h1, h2 {
-  margin: 0;
-}
+.main {
+  h1, h2 {
+    margin: 0;
+  }
 
-h1 {
-  font-size: 3.25rem;
-}
+  h1 {
+    font-size: 3.25rem;
 
-h2 {
-  font-size: 1.5rem;
-  color: lightgray;
-}
+    @media (--mobile) {
+      font-size: 4rem;
+    }
+  }
 
-h3 {
-  font-size: 1.25rem;
-  padding: 0.5em;
-  box-shadow: var(--cyan) -3px 3px;
-  width: fit-content;
+  h2 {
+    font-size: 1.5rem;
+    color: lightgray;
+
+    @media (--mobile) {
+      font-size: 2rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    padding: 0.5em;
+    box-shadow: var(--cyan) -3px 3px;
+    width: fit-content;
+  }
 }
 
 #welcome {
@@ -35,11 +53,20 @@ h3 {
   margin: 1em 0 1em 0.5em;
   box-shadow: var(--light-dark) -5px 5px;
   width: fit-content;
+
+  @media (--mobile) {
+    font-size: 1.5rem;
+    margin: 1.5em 0 1.5em 3.5em;
+  }
 }
 
 .mypastcontainer {
   display: flex;
   flex-direction: column;
+
+  @media (--tablet) {
+    flex-direction: row;
+  }
 }
 
 .mypastcontainer div {
@@ -80,6 +107,10 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-top: 2em;
+
+  @media (--tablet) {
+    flex-direction: row;
+  }
 }
 
 .flexrow > div {
@@ -103,6 +134,11 @@ h3 {
   position-anchor: --skills-hint-anchor;
   position-area: top;
   translate: 0 -1em;
+
+  @media (--mobile) {
+    position-area: right;
+    translate: 1em 0;
+  }
 }
 
 #skillshinttooltip p {
@@ -113,44 +149,8 @@ h3 {
   display: inline;
 }
 
-@media (--mobile) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  #welcome {
-    font-size: 1.5rem;
-    margin: 1.5em 0 1.5em 3.5em;
-  }
-
-  main {
-    padding: 1em;
-  }
-
-  #skillshinttooltip {
-    position-area: right;
-    translate: 1em 0;
-  }
-}
-
 @media (--tablet) {
-  main {
-    padding: 3em;
-  }
-
-  .mypastcontainer {
-    flex-direction: row;
-  }
-
-  .flexrow {
-    flex-direction: row;
-  }
-
-  main section:first-child {
+  main.main section:first-child {
     margin-top: 10vh;
   }
 }

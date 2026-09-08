@@ -1,0 +1,81 @@
+@import '../styles/media.css';
+
+main.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  height: 100%;
+  margin: 1em;
+
+  @media (--mobile) {
+    padding: 1em;
+  }
+
+  @media (--tablet) {
+    padding: 3em;
+  }
+}
+
+.main {
+  h1, h2 {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+
+    @media (--mobile) {
+      font-size: 3.5rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: lightgray;
+
+    @media (--mobile) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.titlecard {
+  h1, h2, h3 {
+    width: fit-content;
+  }
+
+  width: fit-content;
+  padding: 0.5em;
+  border: 3px solid var(--cyan);
+  border-top: none;
+  border-right: none;
+}
+
+.subpagecontrol {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  margin-bottom: 0.25em;
+}
+
+.subpagecontrol > div {
+  flex: 1;
+  min-height: 50px;
+  padding: 20px;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 2px rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
+.projectscontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 2px rgba(255, 255, 255, 0.15);
+  border-radius: 0.5em;
+  padding: 1em;
+}
+
