@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import Project from '../components/Project';
+
+import pqcimg from '../assets/pqc.png';
+
+
 import classes from './ProjectsPage.module.css';
 
 
@@ -20,7 +25,8 @@ function ProjectsPage() {
   const contents: ContentFormat[] = [
     {
       title: t('Pages.Projects.Categories.Cyber'),
-      cont: <p>Content 1</p>
+      cont: <Project name={t('Pages.Home.FeaturedProjects.PQClib.Name')} imgPath={pqcimg} githubUrl='https://github.com/Xantus10/python-pqc-lib'
+                     desc={t('Pages.Home.FeaturedProjects.PQClib.Desc1')} />
     },
     {
       title: t('Pages.Projects.Categories.Web'),

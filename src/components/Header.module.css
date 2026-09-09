@@ -2,7 +2,7 @@
 
 header {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   padding: 0.5em 1em;
   margin-bottom: 2em;
@@ -12,11 +12,10 @@ header {
   border-top-left-radius: 0.5em;
   border-top-right-radius: 0.5em;
   background-color: var(--darkest);
-}
 
-nav {
-  display: flex;
-  flex-direction: row;
+  @media (--mobile) {
+    flex-direction: row;
+  }
 }
 
 @property --button-border-angle {
@@ -25,40 +24,111 @@ nav {
   inherits: false;
 }
 
-nav ul {
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
+.opensidebar, .closesidebar {
+  font-size: 2.25rem;
+  padding: 0.25em;
+  display: block;
+
+  @media (--mobile) {
+    display: none;
+  }
+}
+
+#menucheck:checked ~ .overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+#menucheck {
+  display: none;
+}
+
+#menucheck:checked ~ .links {
+  right: 0;
+}
+
+nav .links {
+  flex-direction: column;
+  gap: 1.5em;
   list-style: none;
   padding: 0;
-  margin: 0;
+  align-items: flex-start;
+
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 10;
+  width: 300px;
+  height: 100%;
+  background-color: var(--darkest);
+
+  transition: right 0.4s ease-out;
+
+  @media (--mobile) {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin: 0;
+
+    position: unset;
+    z-index: unset;
+    width: auto;
+    height: auto;
+  }
+
+  @media (--tablet) {
+    padding: 1em;
+  }
+}
+
+nav li {
+  padding-bottom: 0.5em;
+  width: 100%;
+
+  @media (--mobile) {
+    width: auto;
+  }
 }
 
 nav a {
-  padding: 0.5em 1em;
+  padding: 1em 2em;
   text-decoration: none;
   background-color: transparent;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  border-bottom: 4px solid transparent;
-  border-image: conic-gradient(
-    from var(--button-border-angle),
-    transparent 0deg 90deg,
-    var(--light-cyan) 90deg 115deg,
-    var(--cyan) 245deg 270deg,
-    transparent 270deg
-  ) 0 0 1 0;
-  transition: --button-border-angle 0.25s ease;
+  display: inline-block;
+
+  width: 100%;
+
+  @media (--mobile) {
+    padding: 0.5em 1em;
+    width: auto;
+    
+    border-bottom: 4px solid transparent;
+    border-image: conic-gradient(
+      from var(--button-border-angle),
+      transparent 0deg 90deg,
+      var(--light-cyan) 90deg 115deg,
+      var(--cyan) 245deg 270deg,
+      transparent 270deg
+    ) 0 0 1 0;
+    transition: --button-border-angle 0.25s ease;
+  }
 }
 
 nav a:hover, .active {
+  background: linear-gradient(
+    225deg, rgb(from var(--cyan) r g b / 1),
+    var(--dark),
+    var(--darkest));
   --button-border-angle: 0deg;
-}
 
-
-@media (--tablet) {
-  nav {
-    padding: 1em;
+  @media (--mobile) {
+    background: transparent;
   }
 }

@@ -8,6 +8,11 @@
   flex-direction: column;
   background-color: var(--dark);
   position: relative;
+
+  @media (--mobile) {
+    width: 320px;
+    min-height: 450px;
+  }
 }
 
 .card:hover {
@@ -41,11 +46,4 @@
 .addtext {
   color: lightgray;
   font-size: 0.8em;
-}
-
-@media (--mobile) {
-  .card {
-    width: 320px;
-    min-height: 450px;
-  }
 }
