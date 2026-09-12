@@ -1,23 +1,19 @@
-import { useTranslation } from 'react-i18next';
-
 import classes from './SkillsDisplay.module.css';
 
 
 export interface SkillsDisplayProps {
-  translationBasename: string;
-  len: number;
+  skills: string[];
   confidentNumber: number;
 };
 
 
-function SkillsDisplay({ translationBasename, len, confidentNumber } : SkillsDisplayProps) {
-  const { t } = useTranslation();
+function SkillsDisplay({ skills, confidentNumber } : SkillsDisplayProps) {
 
   return (
     <div className={classes.twocolumns}>
       {
-        Array.from({ length: len }, (_, ix) => (
-          <p key={ix} className={(ix < confidentNumber) ? classes.fullconfident : classes.partconfident}>{t(`${translationBasename}.${ix}` as any)}</p>
+        skills.map((val, ix) => (
+          <p key={ix} className={(ix < confidentNumber) ? classes.fullconfident : classes.partconfident}>{val}</p>
         ))
       }
     </div>

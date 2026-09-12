@@ -3,10 +3,14 @@
 .card {
   border-radius: 0.5em;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: transparent;
   border: 1px transparent solid;
   text-decoration: none;
+
+  @media (--mobile) {
+    flex-direction: row;
+  }
 }
 
 .card:hover {
@@ -20,13 +24,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1em;
+  padding: 0.5em;
+
+  @media (--tablet) {
+    padding: 1em;
+  }
 }
 
 .image {
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
   min-width: 200px;
+  height: 133px;
   overflow: hidden;
 }
 

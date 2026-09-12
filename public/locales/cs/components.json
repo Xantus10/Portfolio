@@ -69,14 +69,14 @@
         }
       },
       "SkillsTitle": "Dovednosti",
-      "Skills": {
-        "0": "Kyberbezpečnost",
-        "1": "Počítačové sítě (úroveň CCNA)",
-        "2": "Python",
-        "3": "React",
-        "4": "Linux (Kali)",
-        "5": "C++"
-      },
+      "Skills": [
+        "Kyberbezpečnost",
+        "Počítačové sítě (CCNA level)",
+        "Python",
+        "React",
+        "Linux (Kali)",
+        "C++"
+      ],
       "SkillsHint": {
         "Green": "Zelená",
         "GreenMeaning": "Plná důvěra v mé schopnosti",
@@ -104,6 +104,72 @@
         "Cyber": "Kyberbezpečnost",
         "Web": "Webové aplikace",
         "Misc": "Různé"
+      },
+      "Projects": {
+        "Cyber": {
+          "PQC-lib": {
+            "Name": "Python PQC lib",
+            "Desc": "Python implementace Post-Kvantových algorithmů které jsou standardizovány v NIST PQC projektu.",
+            "Tags": [
+              "Kryptografie",
+              "Python"
+            ]
+          },
+          "SOC": {
+            "Name": "SOC Alert Sim",
+            "Desc": "Malá platforma pro trénování alert triage.",
+            "Tags": [
+              "React",
+              "Pro studenty"
+            ]
+          },
+          "VulnWebApp": {
+            "Name": "Vuln web app",
+            "Desc": "PHP aplikace pro učení o zranitelnostech web aplikací. Všechny útoky lze rovněž prakticky vyzkoušet na aplikaci samotné.",
+            "Tags": [
+              "PHP",
+              "Pro studenty"
+            ]
+          },
+          "PQC-LWE": {
+            "Name": "PQC-Learning With Errors",
+            "Desc": "Implementace ML KEM algoritmu nad různými variantami LWE problému. Vytvořeno abych zjistil jak funguje ML KEM.",
+            "Tags": [
+              "Kryptografie",
+              "Ruby"
+            ]
+          }
+        },
+        "Web": {
+          "Maturita": {
+            "Name": "Burza učebnic",
+            "Desc": "Fullstack webová aplikace pro studenty kteří chtějí prodat své učebnice.",
+            "Tags": [
+              "Express",
+              "React",
+              "MongoDB",
+              "nginx",
+              "Docker"
+            ]
+          },
+          "Portfolio": {
+            "Name": "Portfolio",
+            "Desc": "Dark-theme SPA stránka sloužící jako portfolio a CV s ukázkou projektů.",
+            "Tags": [
+              "React"
+            ]
+          }
+        },
+        "Misc": {
+          "TGL": {
+            "Name": "Transgalactic",
+            "Desc": "Rozšíření pro ASM, slouží pro rychlejší psaní čistšího ASM kódu. Není to samostatný jazyk, jen rozšíření.",
+            "Tags": [
+              "Python",
+              "ASM"
+            ]
+          }
+        }
       }
     }
   }

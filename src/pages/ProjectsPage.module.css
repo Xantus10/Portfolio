@@ -52,10 +52,14 @@ main.main {
 }
 
 .subpagecontrol {
-  display: flex;
+  display: none;
   flex-direction: row;
   gap: 0.5em;
   margin-bottom: 0.25em;
+
+  @media (--tablet) {
+    display: flex;
+  }
 }
 
 .subpagecontrol > div {
@@ -69,10 +73,38 @@ main.main {
   cursor: pointer;
 }
 
+.subpageselect {
+  font-weight: bold;
+  margin-bottom: 0.25em;
+  width: 100%;
+  padding: 1em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 2px rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+
+  @media (--tablet) {
+    display: none;
+  }
+}
+
+.subpageselect::picker(select) {
+  border-radius: 0.5em;
+  color: inherit;
+  background-color: var(--dark);
+  border: solid 2px rgba(255, 255, 255, 0.15);
+  position-area: block-end span-inline-start;
+}
+
+.subpageselect option {
+  padding: 1em;
+}
+
 .projectscontainer {
   display: flex;
   flex-direction: column;
-  gap: 0.25em;
+  gap: 0.75em;
   background-color: rgba(255, 255, 255, 0.05);
   border: solid 2px rgba(255, 255, 255, 0.15);
   border-radius: 0.5em;

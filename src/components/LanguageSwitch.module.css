@@ -1,7 +1,6 @@
 @import '../styles/media.css';
 
-select {
-  appearance: base-select;
+.langselect {
   font-weight: bold;
   border-width: 2px;
   height: fit-content;
@@ -17,25 +16,11 @@ select {
   }
 }
 
-::picker(select) {
-  margin-top: 0.25em;
-  appearance: base-select;
+.langselect::picker(select) {
   border-radius: 0.5em;
   border-width: 2px;
   background-color: var(--darkest);
   color: inherit;
   position-area: block-end span-inline-start;
-}
-
-select::picker-icon {
-  content: none;
-}
-
-select option {
-  padding: 0.5em;
-}
-
-select option::checkmark {
-  content: none;
 }
 

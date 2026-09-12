@@ -80,7 +80,7 @@ function HomePage() {
               </div>
             </div>
           </h3>
-          <SkillsDisplay translationBasename='Pages.Home.Skills' len={6} confidentNumber={4} />
+          <SkillsDisplay skills={t('Pages.Home.Skills', {returnObjects: true})} confidentNumber={4} />
         </div>
         <div>
           <h3>{t('Pages.Home.CompetitionsTitle')}</h3>

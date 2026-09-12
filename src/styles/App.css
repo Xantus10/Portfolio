@@ -44,6 +44,27 @@ ul {
   padding: 0;
 }
 
+select {
+  appearance: base-select;
+}
+
+::picker(select) {
+  margin-top: 0.25em;
+  appearance: base-select;
+}
+
+select::picker-icon {
+  content: none;
+}
+
+select option {
+  padding: 0.5em;
+}
+
+select option::checkmark {
+  content: none;
+}
+
 body {
   margin: 0;
   padding: 0.5em;

@@ -6,9 +6,10 @@ export interface FeaturedProjectProps {
   imgPath: string;
   githubUrl: string;
   desc: string;
+  tags?: string[];
 };
 
-function Project( { name, imgPath, githubUrl, desc } : FeaturedProjectProps ) {
+function Project( { name, imgPath, githubUrl, desc, tags } : FeaturedProjectProps ) {
 
   return (
     <a href={githubUrl} target='_blank' className={classes.card}>
@@ -21,9 +22,9 @@ function Project( { name, imgPath, githubUrl, desc } : FeaturedProjectProps ) {
             <p>{desc}</p>
           </div>
           <div className={classes.tagscontainer}>
-            <p>Python</p>
-            <p>Cryptography</p>
-            <p>NIST</p>
+            {
+              (tags) ? tags.map((val, ix) => (<p key={ix}>{val}</p>)) : <></>
+            }
           </div>
       </div>
     </a>

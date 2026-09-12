@@ -69,14 +69,14 @@
         }
       },
       "SkillsTitle": "Skills",
-      "Skills": {
-        "0": "Cybersecurity",
-        "1": "Networking (CCNA level)",
-        "2": "Python",
-        "3": "React",
-        "4": "Linux (Kali)",
-        "5": "C++"
-      },
+      "Skills": [
+        "Cybersecurity",
+        "Networking (CCNA level)",
+        "Python",
+        "React",
+        "Linux (Kali)",
+        "C++"
+      ],
       "SkillsHint": {
         "Green": "Green",
         "GreenMeaning": "Full confidence in my abilities",
@@ -104,6 +104,72 @@
         "Cyber": "Cybersecurity",
         "Web": "Web applications",
         "Misc": "Miscellaneous"
+      },
+      "Projects": {
+        "Cyber": {
+          "PQC-lib": {
+            "Name": "Python PQC lib",
+            "Desc": "Python implementation of Post-Quantum cryptography algorithms from the NIST PQC project.",
+            "Tags": [
+              "Cryptography",
+              "Python"
+            ]
+          },
+          "SOC": {
+            "Name": "SOC Alert Sim",
+            "Desc": "A small platform for alert triage exercises.",
+            "Tags": [
+              "React",
+              "For students"
+            ]
+          },
+          "VulnWebApp": {
+            "Name": "Vuln web app",
+            "Desc": "A PHP application aimed at students to learn about web vulnerabilities. Best feature is the ability to exploit all the vulnerabilities against the app itself.",
+            "Tags": [
+              "PHP",
+              "For students"
+            ]
+          },
+          "PQC-LWE": {
+            "Name": "PQC-Learning With Errors",
+            "Desc": "Implementations of ML KEM algorithm over different variants of the LWE problem. Created to learn about inner workings of ML KEM.",
+            "Tags": [
+              "Cryptography",
+              "Ruby"
+            ]
+          }
+        },
+        "Web": {
+          "Maturita": {
+            "Name": "Textbook Exchange",
+            "Desc": "A fullstack web application for students to advertise their used books for sale.",
+            "Tags": [
+              "Express",
+              "React",
+              "MongoDB",
+              "nginx",
+              "Docker"
+            ]
+          },
+          "Portfolio": {
+            "Name": "Portfolio",
+            "Desc": "A dark-themed SPA portfolio and CV website with projects showcase.",
+            "Tags": [
+              "React"
+            ]
+          }
+        },
+        "Misc": {
+          "TGL": {
+            "Name": "Transgalactic",
+            "Desc": "An extension for ASM allowing for faster and cleaner syntax. Not a whole language, just an extension.",
+            "Tags": [
+              "Python",
+              "ASM"
+            ]
+          }
+        }
       }
     }
   }
