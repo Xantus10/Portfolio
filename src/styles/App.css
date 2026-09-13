@@ -53,10 +53,6 @@ select {
   appearance: base-select;
 }
 
-select::picker-icon {
-  content: none;
-}
-
 select option {
   padding: 0.5em;
 }

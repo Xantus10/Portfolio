@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { FaArrowRight, FaRegQuestionCircle } from "react-icons/fa";
+import { FaArrowRight, FaGithub, FaLinkedin, FaRegQuestionCircle } from "react-icons/fa";
 
 import ExperienceCard from '../components/ExpirienceCard';
 import FeaturedProject from '../components/FeaturedProject';
@@ -18,6 +18,10 @@ function HomePage() {
   return (
     <main className={classes.main}>
       <section>
+        <div className={classes.links}>
+          <a href='https://github.com/Xantus10' target='_blank'><FaGithub /></a>
+          <a href='https://www.linkedin.com/in/jaroslav-zaba/' target='_blank'><FaLinkedin /></a>
+        </div>
         <h1>Jaroslav Žaba</h1>
         <h2 style={{textWrap: 'balance'}}>{t('Pages.Home.Subtitle')}</h2>
         <p id={classes.welcome}>{t('Pages.Home.Welcome')}</p>

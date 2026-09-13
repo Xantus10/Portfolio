@@ -24,3 +24,7 @@
   position-area: block-end span-inline-start;
 }
 
+.langselect::picker-icon {
+  content: none;
+}
+
