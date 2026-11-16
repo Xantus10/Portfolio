@@ -1,0 +1,246 @@
+{
+  "Here": "here",
+  "Header": {
+    "Home": "Home",
+    "Projects": "Projects",
+    "AboutMe": "About me"
+  },
+  "FeaturedProject": {
+    "AdditionalNotes": "Additional notes"
+  },
+  "Pages": {
+    "Home": {
+      "Subtitle": "I study cybersecurity and create various fun projects in my free time.",
+      "Welcome": "Welcome to my portfolio",
+      "ExpirienceTitle": "Expirience",
+      "Expiriences": {
+        "VDA_CS_Teacher": {
+          "Title": "Cybersecurity teacher",
+          "Desc": "Cybersecurity teaching based on an Agreement for Work, under the supervision of an assistant teacher."
+        }
+      },
+      "EducationTitle": "Education",
+      "Educations": {
+        "VDA": {
+          "Title": "Střední škola technická a dopravní Gustava Habrmana Česká Třebová",
+          "Desc": "Maturita, specialization: Information technology"
+        },
+        "MUNIBc": {
+          "Title": "Masaryk University",
+          "Desc": "Bachelor programme: Cybersecurity"
+        }
+      },
+      "CompetitionsTitle": "Competitions",
+      "Competitions": {
+        "Kybersoutez": {
+          "Title": "Czech Republic National Cybersecurity Competition",
+          "Desc": "Multiple-time finalist"
+        },
+        "NAG": {
+          "Title": "Networking Academy Games (category HS3)",
+          "Desc": "2nd place"
+        },
+        "CVUT_TD": {
+          "Title": "ČVUT Troubleshoot Day",
+          "Desc": "Two 1st place finishes"
+        }
+      },
+      "FeaturedProjectsTitle": "Featured Projects",
+      "MoreProjects": "Other projects",
+      "FeaturedProjects": {
+        "Maturita": {
+          "Name": "Textbook Exchange",
+          "Desc1": "A fullstack web application for students to advertise their used books for sale.",
+          "Desc2": "Students log in with their Office 365 account and create posts about selling their books. They can also filter and browse these posts and react to them.",
+          "Desc3": "Site is running on school servers and is accessible only to school students, but you can access the user documentation",
+          "AddNotes": "To this day the largest project I have ever done."
+        },
+        "PQClib": {
+          "Name": "Python PQC lib",
+          "Desc1": "Python implementation of Post-Quantum cryptography algorithms from the",
+          "Desc2": "The code is fully functional and tested to be NIST compatible with NIST ACVP test data.",
+          "Desc3": "The library is available on",
+          "AddNotes": "Implementation from scratch (no dependencies other than numpy)."
+        },
+        "SOC": {
+          "Name": "SOC Alert Sim",
+          "Desc1": "A simple frontend only application for simulating simple alert triage.",
+          "Desc2": "The application displays alerts and additional information for each of them and students should identify whether the alert is a true positive or a false positive. It also features a creator for custom exercises.",
+          "Desc3": "There are a few preset exercises, the site is available"
+        }
+      },
+      "SkillsTitle": "Skills",
+      "Skills": [
+        "Cybersecurity",
+        "Networking (CCNA level)",
+        "Python",
+        "React",
+        "Linux (Kali)",
+        "C++"
+      ],
+      "SkillsHint": {
+        "Green": "Green",
+        "GreenMeaning": "Full confidence in my abilities",
+        "Yellow": "Yellow",
+        "YellowMeaning": "Learned and used in practice"
+      },
+      "CertificationTitle": "Certifications",
+      "OtherCourses": "Other courses",
+      "LangTitle": "Languages",
+      "Languages": {
+        "CZ": {
+          "Name": "Czech",
+          "Level": "Native speaker"
+        },
+        "EN": {
+          "Name": "English",
+          "Level": "C1 (CEFR certified)"
+        }
+      }
+    },
+    "Projects": {
+      "Title": "My projects",
+      "Subtitle": "All my notable projects",
+      "Categories": {
+        "Cyber": "Cybersecurity",
+        "Web": "Web applications",
+        "Misc": "Miscellaneous"
+      },
+      "Projects": {
+        "Cyber": {
+          "Note": "Cybersecurity-related projects. A lot of these were created for teaching practical cybersecurity.",
+          "PQC-lib": {
+            "Name": "Python PQC lib",
+            "Desc": "Python implementation of Post-Quantum cryptography algorithms from the NIST PQC project.",
+            "Tags": [
+              "Cryptography",
+              "Python"
+            ]
+          },
+          "SOC": {
+            "Name": "SOC Alert Sim",
+            "Desc": "A small platform for alert triage exercises.",
+            "Tags": [
+              "React",
+              "For students"
+            ]
+          },
+          "VulnWebApp": {
+            "Name": "Vuln web app",
+            "Desc": "A PHP application aimed at students to learn about web vulnerabilities. Best feature is the ability to exploit all the vulnerabilities against the app itself.",
+            "Tags": [
+              "PHP",
+              "For students"
+            ]
+          },
+          "PQC-LWE": {
+            "Name": "PQC-Learning With Errors",
+            "Desc": "Implementations of ML KEM algorithm over different variants of the LWE problem. Created to learn about inner workings of ML KEM.",
+            "Tags": [
+              "Cryptography",
+              "Ruby"
+            ]
+          },
+          "CTF": {
+            "Name": "CTF platform",
+            "Desc": "A simple frontend CTF platform featuring 3 CTF challenges. (One of my first projects)",
+            "Tags": [
+              "React"
+            ]
+          }
+        },
+        "Web": {
+          "Note": "Web applications I created, be it fullstack or frontend-only.",
+          "Maturita": {
+            "Name": "Textbook Exchange",
+            "Desc": "A fullstack web application for students to advertise their used books for sale.",
+            "Tags": [
+              "Express",
+              "React",
+              "MongoDB",
+              "nginx",
+              "Docker"
+            ]
+          },
+          "Portfolio": {
+            "Name": "Portfolio",
+            "Desc": "A dark-themed SPA portfolio and CV website with projects showcase.",
+            "Tags": [
+              "React"
+            ]
+          }
+        },
+        "Misc": {
+          "Note": "Projects I created for no particular reason. They are functional, but not necessarily finished.",
+          "TGL": {
+            "Name": "Transgalactic",
+            "Desc": "An extension for ASM allowing for faster and cleaner syntax. Not a whole language, just an extension.",
+            "Tags": [
+              "Python",
+              "C",
+              "ASM"
+            ]
+          },
+          "tFAT": {
+            "Name": "tFAT",
+            "Desc": "A program for creating virtual disks with custom filesystem (inspired by FAT), supports encryption.",
+            "Tags": [
+              "Python"
+            ]
+          }
+        }
+      }
+    },
+    "About": {
+      "Title": "About me",
+      "FreeTime": {
+        "Title": "My free time",
+        "Gaming": {
+          "Title": "Games",
+          "n1": "CS2 and VALORANT",
+          "n2": "Hollow Knight + Silksong",
+          "n3": "A little bit of LoL"
+        },
+        "CTF": {
+          "Title": "CTFs",
+          "Cont": "Every once in a while, I like to enter a random CTF event which usually takes up all of my time for a few days."
+        },
+        "Music": {
+          "Title": "Music",
+          "Two": "There are two options:",
+          "n1": "Techno (The harder the better)",
+          "n2": "J-pop (Ado is the goat)",
+          "Story": "I also love when a song tells a story."
+        },
+        "Drawing": {
+          "Title": "Drawing",
+          "Cont": "I am trying to learn how to draw.",
+          "Bad": "(I am still very bad though)"
+        },
+        "Sports": {
+          "Title": "Sports",
+          "n1": "In summer: Swimming",
+          "n2": "In winter: Skiing",
+          "Weekly": "I make sure to get at least one exercise per week."
+        },
+        "Anything": {
+          "Title": "Anything",
+          "Cont": "I can take interest in literally anything (although I usually just learn the basics).",
+          "All": "Playing the piano, chemistry, cooking, you name it."
+        }
+      },
+      "Current": {
+        "Title": "Currently working on",
+        "Cont": "No project :( I am settling down at college."
+      },
+      "Favourites": {
+        "Title": "Favourites",
+        "TVShow": "Favourite mainstream TV show: The big bang theory",
+        "Alcohol": "Favourite alcohol: Lemond becherovka",
+        "Nihility": "Favourite philosophy: Nihilism",
+        "Game": "Favourite game: Hollow knight: Silksong",
+        "Fastfood": "Favourite fastfood: KFC"
+      }
+    }
+  }
+}
