@@ -1,0 +1,109 @@
+@import '../styles/media.css';
+
+main.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  height: 100%;
+  margin: 1em;
+
+  @media (--mobile) {
+    padding: 1em;
+  }
+
+  @media (--tablet) {
+    padding: 3em;
+  }
+}
+
+.main {
+  h1 {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+
+    @media (--mobile) {
+      font-size: 3.5rem;
+    }
+  }
+
+  h2 {
+    padding: 0.5em;
+    box-shadow: var(--cyan) -3px 3px;
+    width: fit-content;
+    margin-bottom: 1.25em;
+  }
+
+  ul {
+    padding-inline-start: 20px;
+    list-style-type: square;
+  }
+}
+
+.titlecard {
+  h1, h2, h3 {
+    width: fit-content;
+  }
+
+  width: fit-content;
+  padding: 0.5em;
+  border: 3px solid var(--cyan);
+  border-top: none;
+  border-right: none;
+}
+
+.cardgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  width: min(100%, 1100px);
+  margin: auto;
+
+  @media (--mobile) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+
+  @media (--desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.cardgrid div {
+  padding: 1em;
+  background-color: var(--darkest);
+  border-radius: 0.75em;
+  box-shadow: rgba(255, 255, 255, 0.15) 1px 1px 3px;
+  height: fit-content;
+}
+
+.currentwork {
+  background-image: linear-gradient(
+    90deg,
+    var(--darkest),
+    rgba(from var(--darkest) r g b / 0.5),
+    var(--darkest)
+  );
+  padding: 2em;
+  border-radius: 2.5em;
+  width: 100%;
+  margin: auto;
+
+  @media (--tablet) {
+    width: 75%;
+  }
+}
+
+.currentworkcenter {
+  margin: auto;
+
+  @media (--tablet) {
+    width: 75%;
+  }
+}
+
+.currentworkcenter p:first-child {
+  text-align: center;
+}

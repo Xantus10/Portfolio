@@ -7,9 +7,11 @@ import pqcimg from '../assets/pqc.png';
 import socimg from '../assets/soc.png';
 import vwaimg from '../assets/vulnwebapp.png';
 import pqclweimg from '../assets/pqclwe.png';
+import ctfimg from '../assets/ctf.png';
 import matimg from '../assets/maturita.png';
 import ghimg from '../assets/github.png';
 import tglimg from '../assets/tgl.png';
+import tfatimg from '../assets/tfat.png';
 
 
 import classes from './ProjectsPage.module.css';
@@ -32,6 +34,7 @@ function ProjectsPage() {
     {
       title: t('Pages.Projects.Categories.Cyber'),
       cont: [
+        <p key={'note'} className={classes.note}>{t('Pages.Projects.Projects.Cyber.Note')}</p>,
         <Project key={'PQClib'} name={t('Pages.Projects.Projects.Cyber.PQC-lib.Name')} imgPath={pqcimg} githubUrl='https://github.com/Xantus10/python-pqc-lib'
                  desc={t('Pages.Projects.Projects.Cyber.PQC-lib.Desc')} tags={t('Pages.Projects.Projects.Cyber.PQC-lib.Tags', {returnObjects: true})} />,
         <Project key={'SOC'} name={t('Pages.Projects.Projects.Cyber.SOC.Name')} imgPath={socimg} githubUrl='https://github.com/Xantus10/SOCAlertSim'
@@ -39,12 +42,15 @@ function ProjectsPage() {
         <Project key={'VWA'} name={t('Pages.Projects.Projects.Cyber.VulnWebApp.Name')} imgPath={vwaimg} githubUrl='https://github.com/Xantus10/Vuln_Web_App'
                  desc={t('Pages.Projects.Projects.Cyber.VulnWebApp.Desc')} tags={t('Pages.Projects.Projects.Cyber.VulnWebApp.Tags', {returnObjects: true})} />,
         <Project key={'PQCLWE'} name={t('Pages.Projects.Projects.Cyber.PQC-LWE.Name')} imgPath={pqclweimg} githubUrl='https://github.com/Xantus10/PQC-LWE'
-                 desc={t('Pages.Projects.Projects.Cyber.PQC-LWE.Desc')} tags={t('Pages.Projects.Projects.Cyber.PQC-LWE.Tags', {returnObjects: true})} />
+                 desc={t('Pages.Projects.Projects.Cyber.PQC-LWE.Desc')} tags={t('Pages.Projects.Projects.Cyber.PQC-LWE.Tags', {returnObjects: true})} />,
+        <Project key={'CTF'} name={t('Pages.Projects.Projects.Cyber.CTF.Name')} imgPath={ctfimg} githubUrl='https://github.com/Xantus10/CTF'
+                 desc={t('Pages.Projects.Projects.Cyber.CTF.Desc')} tags={t('Pages.Projects.Projects.Cyber.CTF.Tags', {returnObjects: true})} />
       ]
     },
     {
       title: t('Pages.Projects.Categories.Web'),
       cont: [
+        <p key={'note'} className={classes.note}>{t('Pages.Projects.Projects.Web.Note')}</p>,
         <Project key={'MATURITA'} name={t('Pages.Projects.Projects.Web.Maturita.Name')} imgPath={matimg} githubUrl='https://github.com/Xantus10/MATURITA'
                  desc={t('Pages.Projects.Projects.Web.Maturita.Desc')} tags={t('Pages.Projects.Projects.Web.Maturita.Tags', {returnObjects: true})} />,
         <Project key={'Portfolio'} name={t('Pages.Projects.Projects.Web.Portfolio.Name')} imgPath={ghimg} githubUrl='https://github.com/Xantus10/Portfolio'
@@ -54,8 +60,11 @@ function ProjectsPage() {
     {
       title: t('Pages.Projects.Categories.Misc'),
       cont: [
+        <p key={'note'} className={classes.note}>{t('Pages.Projects.Projects.Misc.Note')}</p>,
         <Project key={'TGL'} name={t('Pages.Projects.Projects.Misc.TGL.Name')} imgPath={tglimg} githubUrl='https://github.com/Xantus10/Transgalactic'
-                 desc={t('Pages.Projects.Projects.Misc.TGL.Desc')} tags={t('Pages.Projects.Projects.Misc.TGL.Tags', {returnObjects: true})} />
+                 desc={t('Pages.Projects.Projects.Misc.TGL.Desc')} tags={t('Pages.Projects.Projects.Misc.TGL.Tags', {returnObjects: true})} />,
+        <Project key={'tFAT'} name={t('Pages.Projects.Projects.Misc.tFAT.Name')} imgPath={tfatimg} githubUrl='https://github.com/Xantus10/tFAT'
+                 desc={t('Pages.Projects.Projects.Misc.tFAT.Desc')} tags={t('Pages.Projects.Projects.Misc.tFAT.Tags', {returnObjects: true})} />
       ]
     }
   ];

@@ -2,7 +2,8 @@
   "Here": "here",
   "Header": {
     "Home": "Home",
-    "Projects": "Projects"
+    "Projects": "Projects",
+    "AboutMe": "About me"
   },
   "FeaturedProject": {
     "AdditionalNotes": "Additional notes"
@@ -107,6 +108,7 @@
       },
       "Projects": {
         "Cyber": {
+          "Note": "Cybersecurity-related projects. A lot of these were created for teaching practical cybersecurity.",
           "PQC-lib": {
             "Name": "Python PQC lib",
             "Desc": "Python implementation of Post-Quantum cryptography algorithms from the NIST PQC project.",
@@ -138,9 +140,17 @@
               "Cryptography",
               "Ruby"
             ]
+          },
+          "CTF": {
+            "Name": "CTF platform",
+            "Desc": "A simple frontend CTF platform featuring 3 CTF challenges. (One of my first projects)",
+            "Tags": [
+              "React"
+            ]
           }
         },
         "Web": {
+          "Note": "Web applications I created, be it fullstack or frontend-only.",
           "Maturita": {
             "Name": "Textbook Exchange",
             "Desc": "A fullstack web application for students to advertise their used books for sale.",
@@ -161,15 +171,75 @@
           }
         },
         "Misc": {
+          "Note": "Projects I created for no particular reason. They are functional, but not necessarily finished.",
           "TGL": {
             "Name": "Transgalactic",
             "Desc": "An extension for ASM allowing for faster and cleaner syntax. Not a whole language, just an extension.",
             "Tags": [
               "Python",
+              "C",
               "ASM"
+            ]
+          },
+          "tFAT": {
+            "Name": "tFAT",
+            "Desc": "A program for creating virtual disks with custom filesystem (inspired by FAT), supports encryption.",
+            "Tags": [
+              "Python"
             ]
           }
         }
+      }
+    },
+    "About": {
+      "Title": "About me",
+      "FreeTime": {
+        "Title": "My free time",
+        "Gaming": {
+          "Title": "Games",
+          "n1": "CS2 and VALORANT",
+          "n2": "Hollow Knight + Silksong",
+          "n3": "A little bit of LoL"
+        },
+        "CTF": {
+          "Title": "CTFs",
+          "Cont": "Every once in a while, I like to enter a random CTF event which usually takes up all of my time for a few days."
+        },
+        "Music": {
+          "Title": "Music",
+          "Two": "There are two options:",
+          "n1": "Techno (The harder the better)",
+          "n2": "J-pop (Ado is the goat)",
+          "Story": "I also love when a song tells a story."
+        },
+        "Drawing": {
+          "Title": "Drawing",
+          "Cont": "I am trying to learn how to draw.",
+          "Bad": "(I am still very bad though)"
+        },
+        "Sports": {
+          "Title": "Sports",
+          "n1": "In summer: Swimming",
+          "n2": "In winter: Skiing",
+          "Weekly": "I make sure to get at least one exercise per week."
+        },
+        "Anything": {
+          "Title": "Anything",
+          "Cont": "I can take interest in literally anything (although I usually just learn the basics).",
+          "All": "Playing the piano, chemistry, cooking, you name it."
+        }
+      },
+      "Current": {
+        "Title": "Currently working on",
+        "Cont": "No project :( I am settling down at college."
+      },
+      "Favourites": {
+        "Title": "Favourites",
+        "TVShow": "Favourite mainstream TV show: The big bang theory",
+        "Alcohol": "Favourite alcohol: Lemond becherovka",
+        "Nihility": "Favourite philosophy: Nihilism",
+        "Game": "Favourite game: Hollow knight: Silksong",
+        "Fastfood": "Favourite fastfood: KFC"
       }
     }
   }

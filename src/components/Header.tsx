@@ -28,6 +28,7 @@ function Header() {
             
             <li><NavLink onClick={() => setCheckbox(false)} to='/' className={({isActive}) => isActive ? classes.active : ''}>{t('Header.Home')}</NavLink></li>
             <li><NavLink onClick={() => setCheckbox(false)} to='/projects' className={({isActive}) => isActive ? classes.active : ''}>{t('Header.Projects')}</NavLink></li>
+            <li><NavLink onClick={() => setCheckbox(false)} to='/me' className={({isActive}) => isActive ? classes.active : ''}>{t('Header.AboutMe')}</NavLink></li>
           </ul>
         </nav>
         <LanguageSwitch />

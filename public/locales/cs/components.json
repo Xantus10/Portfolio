@@ -2,7 +2,8 @@
   "Here": "zde",
   "Header": {
     "Home": "Domů",
-    "Projects": "Projekty"
+    "Projects": "Projekty",
+    "AboutMe": "O mně"
   },
   "FeaturedProject": {
     "AdditionalNotes": "Další poznámky"
@@ -107,6 +108,7 @@
       },
       "Projects": {
         "Cyber": {
+          "Note": "Projekty o kyberbezpečnosti. Hodně jich bylo vytvořeno pro potřeby praktické výuky kyberbezpečnosti.",
           "PQC-lib": {
             "Name": "Python PQC lib",
             "Desc": "Python implementace Post-Kvantových algorithmů které jsou standardizovány v NIST PQC projektu.",
@@ -138,9 +140,17 @@
               "Kryptografie",
               "Ruby"
             ]
+          },
+          "CTF": {
+            "Name": "CTF platforma",
+            "Desc": "Jednoduchá frontend CTF platforma se třemi CTF. (Jeden z mých prvních projektů)",
+            "Tags": [
+              "React"
+            ]
           }
         },
         "Web": {
+          "Note": "Mnou vytvořené webové aplikace, ať už fullstack nebo frontend-only.",
           "Maturita": {
             "Name": "Burza učebnic",
             "Desc": "Fullstack webová aplikace pro studenty kteří chtějí prodat své učebnice.",
@@ -161,15 +171,75 @@
           }
         },
         "Misc": {
+          "Note": "Projekty které jsem vytvořil bez zvláštního důvodu (jen tak). Jsou funkční, ale ne nutně dokončené.",
           "TGL": {
             "Name": "Transgalactic",
             "Desc": "Rozšíření pro ASM, slouží pro rychlejší psaní čistšího ASM kódu. Není to samostatný jazyk, jen rozšíření.",
             "Tags": [
               "Python",
+              "C",
               "ASM"
+            ]
+          },
+          "tFAT": {
+            "Name": "tFAT",
+            "Desc": "Program pro vytváření virtuálních disků s vlastním souborovým systémem (inspirováno FAT), podporuje šifrování.",
+            "Tags": [
+              "Python"
             ]
           }
         }
+      }
+    },
+    "About": {
+      "Title": "O mně",
+      "FreeTime": {
+        "Title": "Volný čas",
+        "Gaming": {
+          "Title": "Hry",
+          "n1": "CS2 a VALORANT",
+          "n2": "Hollow Knight + Silksong",
+          "n3": "Trochu LoLka"
+        },
+        "CTF": {
+          "Title": "CTFka",
+          "Cont": "Jednou za čas se přihlásím do nějakého náhodného CTF a mám na pár dní o zábavu postaráno."
+        },
+        "Music": {
+          "Title": "Hudba",
+          "Two": "Jsou zde dvě možnosti:",
+          "n1": "Techno (pořádný techno)",
+          "n2": "J-pop (Ado je goat)",
+          "Story": "Miluju když písnička vypráví příběh."
+        },
+        "Drawing": {
+          "Title": "Kreslení",
+          "Cont": "Zkouším se naučit kreslit.",
+          "Bad": "(Pořád mi to nejde)"
+        },
+        "Sports": {
+          "Title": "Sport",
+          "n1": "V létě: Plavání",
+          "n2": "V zimě: Lyžování",
+          "Weekly": "Alespoň jednou za týden si nějak zacvičím."
+        },
+        "Anything": {
+          "Title": "Cokoliv",
+          "Cont": "Můžu se zajímat o cololiv (i když se většinou naučím jen základy).",
+          "All": "Hraní na piáno, chemie, vaření, cokoliv."
+        }
+      },
+      "Current": {
+        "Title": "Co právě dělám",
+        "Cont": "Žádný projekt :( Snažím se usadit na MUNI."
+      },
+      "Favourites": {
+        "Title": "Moje nej",
+        "TVShow": "Nejoblíbenější mainstream TV seriál: Teorie velkého třesku",
+        "Alcohol": "Nejoblíbenější alkohol: Lemond becherovka",
+        "Nihility": "Nejoblíbenější filozofie: Nihilismus",
+        "Game": "Nejoblíbenější hra: Hollow knight: Silksong",
+        "Fastfood": "Nejoblíbenější fastfood: KFC"
       }
     }
   }
